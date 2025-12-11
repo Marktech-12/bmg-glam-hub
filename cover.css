@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #000000, #4b0082);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cover-container {
+  text-align: center;
+}
+
+.brand {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.enter-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+}
+
+.enter-btn:hover {
+  opacity: 0.8;
+}
