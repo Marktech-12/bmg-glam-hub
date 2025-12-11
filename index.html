@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMG Glam Hub</title>
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="style.css">
-    <!-- Cover Page Styles -->
+    <!-- Cover Styles -->
     <link rel="stylesheet" href="cover.css">
-</head>
-<body>
-    <!-- ========================= -->
-    <!-- 🚪 COVER / ENTER SCREEN -->
-    <!-- ========================= -->
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- 📌 COVER SCREEN -->
+    <!-- ============================= -->
     <div id="cover-screen">
-        <h1 class="cover-title">BMG Glam Hub</h1>
-        <button class="enter-btn" onclick="enterSite()">ENTER</button>
+
+        <!-- LOGO -->
+        <img src="your-logo.png" alt="BMG Glam Hub Logo" class="cover-logo">
+
+        <!-- TITLE -->
+        <h1 class="cover-title">Welcome to BMG Glam Hub</h1>
+
+        <!-- GLASS BOX with ENTER -->
+        <div class="glass-box">
+            <button class="enter-btn" onclick="enterSite()">ENTER</button>
+        </div>
+
+        <!-- LOADING SPINNER -->
+        <div class="loader"></div>
     </div>
 
-    <!-- ========================= -->
-    <!-- 🔝 HEADER -->
-    <!-- ========================= -->
-    
-    <header>
-        <h1>BMG Glam Hub</h1>
-        <p>Salon • Kinyozi • Cosmetics Shop – Murang'a</p>
-    </header>
-
-    <!-- ========================= -->
-    <!-- 🧭 NAVIGATION -->
-    <!-- ========================= -->
-
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="vacancies.html">Vacancies</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <!-- JavaScript -->
+    <!-- ============================= -->
+    <!-- 📌 HOME PAGE REDIRECT -->
+    <!-- ============================= -->
     <script src="script.js"></script>
+
 </body>
 </html>
