@@ -1,60 +1,107 @@
+:root {
+    --primary: #c2185b;
+    --secondary: #f8bbd0;
+    --dark: #1a1a1a;
+    --light: #ffffff;
+    --gray: #f5f5f5;
+}
+
+/* ========================= */
+/* 🌐 GLOBAL STYLES */
+/* ========================= */
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background: var(--gray);
+    font-family: "Montserrat", sans-serif;
 }
 
-/* Header */
+/* ========================= */
+/* 🔝 HEADER */
+/* ========================= */
+
 header {
-  background: #000;
-  color: white;
-  padding: 25px 0;
-  text-align: center;
+    background: var(--primary);
+    color: var(--light);
+    text-align: center;
+    padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-  letter-spacing: 1px;
-}
+/* ========================= */
+/* 🧭 NAVIGATION */
+/* ========================= */
 
-header p {
-  margin: 5px 0 0;
-  font-size: 16px;
-}
-
-/* Navigation */
 nav {
-  background: #4b0082;
-  display: flex;
-  justify-content: center;
-  padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #b31652;
+    padding: 12px;
 }
 
 nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* ========================= */
+/* 🏠 HERO SECTION */
+/* ========================= */
+
+.hero {
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
 }
 
-/* Welcome Section */
-.welcome {
-  padding: 40px;
-  text-align: center;
+/* ========================= */
+/* 📦 SECTIONS */
+/* ========================= */
+
+.section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.welcome h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+/* ========================= */
+/* 🃏 CARDS */
+/* ========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-.welcome p {
-  font-size: 18px;
-  color: #444;
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ========================= */
+/* 🔚 FOOTER */
+/* ========================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
