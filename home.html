@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMG Glam Hub – Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMG Glam Hub - Home</title>
 
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Page Container (Centers Everything) -->
-    <div class="page-container">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">BMG Glam Hub</div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="vacancies.html">Vacancies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- HEADER / NAVIGATION -->
-        <header class="header">
-            <img src="images/logo.png" class="logo" alt="BMG Glam Hub Logo">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>BMG Glam Hub</span></h1>
+            <p>Your trusted Salon, Kinyozi & Cosmetics shop in Murang'a.</p>
+            <a href="services.html" class="hero-btn">Explore Our Services</a>
+        </div>
+    </section>
 
-            <nav class="nav">
-                <a href="home.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="products.html">Products</a>
-                <a href="vacancies.html">Vacancies</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>Why Choose Us</h2>
+        <p class="about-text">We offer professional beauty and grooming services with top-quality products, skilled staff, and a luxurious experience for all our clients.</p>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <h1>Welcome to BMG Glam Hub</h1>
-            <p>Your one-stop Salon, Kinyozi, and Cosmetics Shop in Murang'a.</p>
-
-            <a href="services.html" class="cta-btn">View Our Services</a>
-        </section>
-
-
-        <!-- ABOUT SECTION -->
-        <section class="about">
-            <h2>Why Choose Us?</h2>
-            <p class="center-text">
-                At BMG Glam Hub, we offer professional grooming, beauty, and cosmetic services  
-                tailored to your style. Enjoy a clean environment, trained staff, and the best experience.
-            </p>
-        </section>
-
-
-        <!-- QUICK LINKS SECTION -->
-        <section class="quick-links">
-            <h2>Explore</h2>
-
-            <div class="quick-grid">
-                <a href="services.html" class="card">Our Services</a>
-                <a href="products.html" class="card">Beauty Products</a>
-                <a href="vacancies.html" class="card">Job Vacancies</a>
-                <a href="contact.html" class="card">Contact Us</a>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Professional Stylists</h3>
+                <p>Our experienced salon and kinyozi team guarantees quality results every time.</p>
             </div>
-        </section>
 
-    </div> <!-- END page-container -->
+            <div class="about-card">
+                <h3>Quality Cosmetics</h3>
+                <p>We stock genuine beauty products to enhance your natural glow.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Affordable Pricing</h3>
+                <p>Top-notch service doesn't have to be expensive — we keep it friendly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PHOTOS -->
+    <section class="gallery">
+        <h2>Our Work</h2>
+        <div class="gallery-grid">
+            <img src="gallery/pic1.jpg" alt="">
+            <img src="gallery/pic2.jpg" alt="">
+            <img src="gallery/pic3.jpg" alt="">
+            <img src="gallery/pic4.jpg" alt="">
+            <img src="gallery/pic5.jpg" alt="">
+            <img src="gallery/pic6.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 BMG Glam Hub — Beauty Redefined.</p>
+    </footer>
 
 </body>
 </html>
