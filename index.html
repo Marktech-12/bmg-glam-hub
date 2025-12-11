@@ -11,8 +11,14 @@
   <div class="cover-container">
     <h1 class="brand">BMG GLAM HUB</h1>
     <p class="tagline">Salon • Kinyozi • Cosmetics</p>
-    <button onclick="enterSite()" class="enter-btn">Tap to Enter</button>
-  </div>
+    <button id="enter" class="enter-btn">Tap to Enter</button>
+
+<script>
+document.getElementById("enter").addEventListener("click", function() {
+    window.location.href = "home.html";
+});
+</script>
+
 
   <script src="./script.js"></script>
 </body>
