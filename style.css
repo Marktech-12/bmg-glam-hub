@@ -1,174 +1,136 @@
-/* =============================
-   📌 COVER PAGE (Enhanced)
-   Includes:
-   ✔ Dark overlay
-   ✔ Fade-in text
-   ✔ Logo animation (pulse)
-   ✔ Loading spinner before ENTER appears
-   ✔ Strong zoom effect
-   ✔ Glassmorphism panel
-   ✔ Slide-up button animation
-==============================*/
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
 
-/* Background setup */
-#cover-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('your-image.jpg') center/cover no-repeat;
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* HEADER */
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    z-index: 9999;
-    animation: zoomEffect 6s ease-in-out infinite alternate;
-    overflow: hidden;
+    padding: 15px 0;
 }
 
-/* Dark overlay */
-#cover-screen::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1;
+.logo {
+    height: 70px;
 }
 
-/* Title text */
-.cover-title {
-    font-size: 42px;
-    color: white;
-    font-weight: bold;
-    z-index: 2;
-    animation: fadeIn 2s ease forwards;
-    opacity: 0;
-}
-
-/* Logo animation (pulse) */
-.cover-logo {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    z-index: 2;
-    animation: logoPulse 2.5s infinite ease-in-out;
-    opacity: 0;
-    animation: fadeIn 2.5s ease forwards;
-}
-
-/* Glassmorphism container */
-.glass-box {
-    margin-top: 20px;
-    padding: 20px 40px;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
-    z-index: 2;
-    opacity: 0;
-    animation: fadeIn 3s ease forwards;
-}
-
-/* ENTER button */
-.enter-btn {
-    margin-top: 20px;
-    padding: 14px 35px;
-    font-size: 18px;
-    background: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    z-index: 2;
-    opacity: 0;
-    animation: slideUp 2.5s ease forwards;
+/* NAVIGATION */
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
     transition: 0.3s;
 }
-.enter-btn:hover {
-    background: #f0f0f0;
-    transform: scale(1.05);
+
+.nav a:hover,
+.nav a.active {
+    color: #d63384;
 }
 
-/* Loading spinner BEFORE button appears */
-.loader {
-    border: 6px solid rgba(255,255,255,0.3);
-    border-top: 6px solid white;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    animation: spin 1s linear infinite;
-    position: absolute;
-    top: 75%;
-    z-index: 2;
-}
-/* Center all pages globally */
-.page-container {
-    max-width: 1100px;
-    margin: 0 auto;         /* Centers the entire website */
-    padding: 20px;
-    width: 100%;
+/* TITLES */
+h1 {
+    font-size: 32px;
+    margin-top: 20px;
 }
 
-/* Center all headings */
-.page-container h1,
-.page-container h2,
-.page-container h3 {
-    text-align: center;
-}
-
-/* Center all sections */
-section {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Center text blocks */
 .center-text {
-    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-/* Center service/product cards grid */
-.center-grid {
+/* SERVICE & PRODUCT GRID */
+.services-grid,
+.products-grid {
     display: grid;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
-/* Forms globally centered */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.service-card,
+.product-card,
+.vacancy-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
-/* Keyframes animations */
-@keyframes fadeIn {
-    to { opacity: 1; }
+.service-card:hover,
+.product-card:hover,
+.vacancy-card:hover {
+    transform: translateY(-5px);
 }
 
-@keyframes slideUp {
-    from { transform: translateY(40px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+.service-card img,
+.product-card img {
+    width: 100%;
+    border-radius: 12px;
 }
 
-@keyframes zoomEffect {
-    from { transform: scale(1); }
-    to { transform: scale(1.07); }
+/* VACANCY CARD */
+.vacancy-card h3 {
+    margin: 10px 0;
 }
 
-@keyframes logoPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
+.vacancy-info {
+    color: #d63384;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+/* BUTTONS */
+.btn-primary {
+    display: inline-block;
+    background: #d63384;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #ad2268;
+}
+
+/* FORMS */
+.form-card {
+    background: white;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.form-card label {
+    font-weight: 600;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
 }
