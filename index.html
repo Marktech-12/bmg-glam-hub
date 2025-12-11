@@ -6,27 +6,22 @@
     <title>BMG Glam Hub</title>
     <link rel="stylesheet" href="cover.css">
 </head>
-
 <body>
 
-    <!-- Page Wrapper for Centering -->
-    <div class="page-container">
+    <!-- Loader -->
+    <div class="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
 
-        <!-- Loader -->
-        <div class="loader">
-            <div class="spinner"></div>
-            <p>Loading...</p>
-        </div>
+    <!-- Cover Page -->
+    <div class="cover-container" id="coverPage">
+        <img src="logo.png" alt="BMG Glam Hub" class="logo">
 
-        <!-- Enter Screen -->
-        <div class="enter-screen">
-            <img src="images/logo.png" class="logo" alt="BMG Glam Hub Logo">
+        <h1 class="brand-name">BMG GLAM HUB</h1>
+        <p class="tagline">Salon • Kinyozi • Cosmetics</p>
 
-            <h1 class="welcome-text">Welcome to BMG Glam Hub</h1>
-
-            <a href="home.html" class="enter-btn">ENTER</a>
-        </div>
-
+        <button class="enter-btn" onclick="enterSite()">ENTER</button>
     </div>
 
     <script src="script.js"></script>
