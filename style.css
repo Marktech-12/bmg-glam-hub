@@ -402,3 +402,30 @@ h1 {
     max-width: 1000px;     /* prevents stretching */
     margin: 0 auto;        /* extra centering */
 }
+/* ABSOLUTE MAP CENTER FIX */
+.map-section {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.map-container {
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.map-container iframe {
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
