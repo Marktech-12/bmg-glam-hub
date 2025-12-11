@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <div class="page-container">
-    <!-- your page content -->
-</div>
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -33,38 +30,45 @@
     </header>
 
     <!-- CONTACT SECTION -->
-<section class="contact-section">
-    <div class="contact-box">
-        <h2><span class="icon">📞</span> Contact Details</h2>
+    <section class="contact-section">
 
-        <p><strong>Phone:</strong> 0704865725 / 0700692492</p>
-        <p><strong>Email:</strong> bmgglamhub@gmail.com<br>markbrian5368jay@gmail.com</p>
-        <p><strong>Location:</strong> Murang'a Town, Kenya</p>
-    </div>
+        <div class="contact-grid">
 
-    <div class="contact-box">
-        <h2><span class="icon">✉️</span> Send a Message</h2>
+            <!-- CONTACT INFO BOX -->
+            <div class="contact-box">
+                <h2>Get In Touch</h2>
 
-        <form action="contact.php" method="POST" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="phone" placeholder="Phone Number" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="send-btn">Send Message</button>
-        </form>
-    </div>
-</section>
+                <p><strong>Phone:</strong> 0704865725 / 0700692492</p>
+                <p><strong>Email:</strong> bmgglamhub@gmail.com<br>markbrian5368jay@gmail.com</p>
+                <p><strong>Location:</strong> Murang'a Town, Kenya</p>
+            </div>
 
-    <!-- GOOGLE MAP -->
-<section class="map-section">
-    <h2 class="map-title">Find Us on the Map</h2>
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.613983316066!2d37.154!3d-0.721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289b7a12345678%3A0xabcdef!2sMurang'a%20Town!5e0!3m2!1sen!2ske!4v1234567890"
-            allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
-</section>
+            <!-- CONTACT FORM -->
+            <div class="contact-box">
+                <h2>Send a Message</h2>
+                <form action="contact.php" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.613983316066!2d37.154!3d-0.721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289b7a12345678%3A0xabcdef!2sMurang'a%20Town!5e0!3m2!1sen!2ske!4v1234567890"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
 
     <!-- WHATSAPP FLOAT BUTTON -->
     <a href="https://wa.me/254704865725" class="whatsapp-float" target="_blank">WhatsApp</a>
