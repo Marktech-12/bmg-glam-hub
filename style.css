@@ -493,3 +493,79 @@ h1 {
     height: 100%;
     border: 0;
 }
+/* HERO */
+.hero {
+    background: url('gallery/hero-bg.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-content h1 span {
+    color: #d63384;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    background: #d63384;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.about-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 15px;
+}
