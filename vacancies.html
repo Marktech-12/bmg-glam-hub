@@ -3,84 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMG Glam Hub - Vacancies</title>
+    <title>BMG Glam Hub – Vacancies</title>
 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">BMG Glam Hub</div>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="vacancies.html" class="active">Vacancies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- HEADER -->
-    <header class="page-header">
-        <h1>Job Vacancies</h1>
-        <p>Apply for open positions at BMG Glam Hub</p>
-    </header>
+    <!-- Page Container -->
+    <div class="page-container">
 
-    <!-- VACANCY SECTION -->
-    <section class="vacancy-section">
-        <div class="vacancy-box">
-            <h2>Hair Stylist</h2>
-            <p>We are seeking a skilled and creative hair stylist with experience in braiding, weaving, and modern styling techniques.</p>
-            <p><strong>Requirements:</strong></p>
-            <ul>
-                <li>1+ year experience in salon work</li>
-                <li>Good communication skills</li>
-                <li>Customer-friendly attitude</li>
-            </ul>
-        </div>
+        <!-- HEADER -->
+        <header class="header">
+            <img src="images/logo.png" class="logo" alt="BMG Glam Hub Logo">
 
-        <div class="vacancy-box">
-            <h2>Kinyozi Barber</h2>
-            <p>Join our grooming team to provide clean fades, beard trimming, and modern haircut styles.</p>
-            <p><strong>Requirements:</strong></p>
-            <ul>
-                <li>Experienced in modern barbering</li>
-                <li>Fast and clean work</li>
-                <li>Respectful and professional</li>
-            </ul>
-        </div>
+            <nav class="nav">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+                <a href="vacancies.html" class="active">Vacancies</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
 
-        <div class="vacancy-box">
-            <h2>Beautician / Makeup Artist</h2>
-            <p>We are hiring a talented makeup artist for events, bridal work, and glam sessions.</p>
-            <p><strong>Requirements:</strong></p>
-            <ul>
-                <li>Skilled with different makeup styles</li>
-                <li>Punctual and reliable</li>
-                <li>Creative and detail-oriented</li>
-            </ul>
-        </div>
-    </section>
+        <!-- PAGE TITLE -->
+        <section>
+            <h1>Job Vacancies</h1>
+            <p class="center-text">Join our professional and friendly team at BMG Glam Hub.</p>
+        </section>
 
-    <!-- APPLICATION FORM -->
-    <section class="apply-section">
-        <h2>Apply Now</h2>
+        <!-- VACANCY LIST -->
+        <section class="vacancies-section">
 
-        <form action="#" class="apply-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Phone Number" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Why do you want this job?" required></textarea>
-            <button type="submit" class="submit-btn">Submit Application</button>
-        </form>
-    </section>
+            <div class="vacancy-card">
+                <h3>Senior Hair Stylist</h3>
+                <p class="vacancy-info">Experience Required: 2+ years</p>
+                <p>We are looking for a talented lady stylist skilled in weaving, braiding, and hair treatments.</p>
+                <a href="apply.html" class="btn-primary">Apply Now</a>
+            </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 BMG Glam Hub — All Rights Reserved.</p>
-    </footer>
+            <div class="vacancy-card">
+                <h3>Kinyozi Barber</h3>
+                <p class="vacancy-info">Experience Required: 1+ years</p>
+                <p>Must be skilled in fades, beard styling, line-ups, and kids’ cuts.</p>
+                <a href="apply.html" class="btn-primary">Apply Now</a>
+            </div>
+
+            <div class="vacancy-card">
+                <h3>Makeup Artist</h3>
+                <p class="vacancy-info">Experience Required: 1+ years</p>
+                <p>Creative and confident makeup artist for events, shoots, and weddings.</p>
+                <a href="apply.html" class="btn-primary">Apply Now</a>
+            </div>
+
+            <div class="vacancy-card">
+                <h3>Receptionist</h3>
+                <p class="vacancy-info">Experience Required: None</p>
+                <p>Friendly person needed for front desk, customer service, and booking clients.</p>
+                <a href="apply.html" class="btn-primary">Apply Now</a>
+            </div>
+
+        </section>
+
+    </div><!-- END page-container -->
 
 </body>
 </html>
