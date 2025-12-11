@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMG Glam Hub • Welcome</title>
-  <link rel="stylesheet" href="cover.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMG Glam Hub</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Cover Page Styles -->
+    <link rel="stylesheet" href="cover.css">
 </head>
 <body>
+    <!-- ========================= -->
+    <!-- 🚪 COVER / ENTER SCREEN -->
+    <!-- ========================= -->
 
-  <div class="cover-container">
-    <h1 class="brand">BMG GLAM HUB</h1>
-    <p class="tagline">Salon • Kinyozi • Cosmetics</p>
-    <button id="enter" class="enter-btn">Tap to Enter</button>
+    <div id="cover-screen">
+        <h1 class="cover-title">BMG Glam Hub</h1>
+        <button class="enter-btn" onclick="enterSite()">ENTER</button>
+    </div>
 
-<script>
-document.getElementById("enter").addEventListener("click", function() {
-    window.location.href = "home.html";
-});
-</script>
+    <!-- ========================= -->
+    <!-- 🔝 HEADER -->
+    <!-- ========================= -->
+    
+    <header>
+        <h1>BMG Glam Hub</h1>
+        <p>Salon • Kinyozi • Cosmetics Shop – Murang'a</p>
+    </header>
 
+    <!-- ========================= -->
+    <!-- 🧭 NAVIGATION -->
+    <!-- ========================= -->
 
-  <script src="script.js"></script>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="vacancies.html">Vacancies</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
