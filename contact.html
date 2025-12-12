@@ -1,82 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMG Glam Hub - Contact</title>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #111;
+    color: white;
+    overflow: hidden;
+}
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+/* LOADER */
+.loader {
+    position: fixed;
+    inset: 0;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
 
-<body>
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #444;
+    border-top-color: #f8c200;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+}
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">BMG Glam Hub</div>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="vacancies.html">Vacancies</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
 
-    <!-- HEADER -->
-    <header class="page-header">
-        <h1>Contact Us</h1>
-        <p>Reach out to BMG Glam Hub for bookings, inquiries, or support.</p>
-    </header>
+.loader p {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.7;
+}
 
-    <!-- CONTACT SECTION -->
-    <section class="contact-section">
+/* COVER PAGE */
+.cover-container {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(to bottom, #111, #000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures perfect centering */
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
 
-        <div class="contact-grid">
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
 
-            <!-- CONTACT INFO BOX -->
-            <div class="contact-box">
-                <h2>Get In Touch</h2>
+/* REMOVED LOGO COMPLETELY */
 
-                <p><strong>Phone:</strong> 0704865725 / 0700692492</p>
-                <p><strong>Email:</strong> bmgglamhub@gmail.com<br>markbrian5368jay@gmail.com</p>
-                <p><strong>Location:</strong> Murang'a Town, Kenya</p>
-            </div>
+/* BRAND TEXT */
+.brand-name {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
 
-            <!-- CONTACT FORM -->
-            <div class="contact-box">
-                <h2>Send a Message</h2>
-                <form action="contact.php" method="POST" class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="text" name="phone" placeholder="Phone Number" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="send-btn">Send Message</button>
-                </form>
-            </div>
+.tagline {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
 
-        </div>
+/* ENTER BUTTON */
+.enter-btn {
+    padding: 12px 35px;
+    font-size: 18px;
+    border: none;
+    background: #f8c200;
+    color: #000;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
 
-    </section>
-
-    <!-- MAP SECTION (NOT A PHOTO) -->
-    <section class="map-section">
-        <h2>Find Us</h2>
-        <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.613983316066!2d37.154!3d-0.721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18289b7a12345678%3A0xabcdef!2sMurang'a%20Town!5e0!3m2!1sen!2ske!4v1234567890"
-                allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-    </section>
-
-    <!-- WHATSAPP FLOAT BUTTON -->
-    <a href="https://wa.me/254704865725" class="whatsapp-float" target="_blank">WhatsApp</a>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 BMG Glam Hub — All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+.enter-btn:hover {
+    background: #ffd84d;
+    transform: scale(1.05);
+}
