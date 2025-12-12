@@ -1,39 +1,7 @@
-// Hide loader
-window.onload = () => {
-    document.querySelector(".loader").style.display = "none";
-};
-
-// Enter button function
-function enterSite() {
-    window.location.href = "home.html";
-}
-// Form popup success message + redirect to thankyou.html
 document.addEventListener("DOMContentLoaded", () => {
-    const forms = document.querySelectorAll("form");
+    const btn = document.querySelector(".enter-btn");
 
-    forms.forEach(form => {
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            // Create popup box
-            const popup = document.createElement("div");
-            popup.classList.add("popup-box");
-            popup.innerHTML = `
-                <div class="popup-content">
-                    <h2>Success!</h2>
-                    <p>Your form has been submitted.</p>
-                </div>
-            `;
-
-            document.body.appendChild(popup);
-
-            // Auto fade out + redirect
-            setTimeout(() => {
-                popup.classList.add("fade-out");
-                setTimeout(() => {
-                    window.location.href = "thankyou.html";
-                }, 300);
-            }, 1500);
-        });
+    btn.addEventListener("click", () => {
+        window.location.href = "home.html";
     });
 });
