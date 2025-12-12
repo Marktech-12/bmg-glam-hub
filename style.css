@@ -1,12 +1,37 @@
-/* UNIFORM SMALL SQUARE IMAGES */
+/* GLOBAL CENTERING */
+.page-container,
+.center-section,
+.services-section,
+.products-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* HEADER SPACING */
+.page-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* FIX NAVBAR CENTERING */
+.navbar,
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* UNIFORM SMALLER SQUARE IMAGES */
 .service-card img,
 .product-card img {
-    width: 250px;
-    height: 250px;
+    width: 200px;         /* smaller */
+    height: 200px;        /* smaller */
     object-fit: cover;
     border-radius: 12px;
     display: block;
-    margin: 0 auto 15px; /* Center image */
+    margin: 0 auto 15px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
@@ -14,6 +39,10 @@
 .service-card,
 .product-card {
     text-align: center;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 /* GRID IMPROVED */
@@ -21,6 +50,24 @@
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+    gap: 25px;
+    padding: 10px;
+}
+
+/* HOMEPAGE CENTER FIX */
+.home-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* COVER PAGE CENTER FIX */
+.cover-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px;
 }
